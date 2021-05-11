@@ -10,10 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_11_152203) do
+ActiveRecord::Schema.define(version: 2021_05_11_153403) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "business_hours", force: :cascade do |t|
+    t.integer "day"
+    t.time "open"
+    t.time "close"
+    t.boolean "opened"
+    t.bigint "shop_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["shop_id"], name: "index_business_hours_on_shop_id"
+  end
 
   create_table "shops", force: :cascade do |t|
     t.string "name"
@@ -21,4 +32,5 @@ ActiveRecord::Schema.define(version: 2021_05_11_152203) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  add_foreign_key "business_hours", "shops"
 end

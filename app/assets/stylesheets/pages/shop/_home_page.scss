@@ -1,3 +1,13 @@
+.top-index-page{
+    background-image:url(image_path('background-top.png'));
+    height:400px;
+    width:100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size:100% 100%;
+    margin-bottom: 140px;
+}
+
 .pitch{
     margin-bottom: 40px;
 }
@@ -125,4 +135,19 @@
     width: 100%;
     height: 100%; 
     object-fit: contain;
+}
+
+
+// Search box
+#src-bx-index{
+    position: relative;
+    top: 60%;
+    width: 35%;
+    right: -4%;
+}
+
+.index-title{
+    margin-bottom: 10px;
+    font-weight:bold;
+    font-size: 25px;
 }

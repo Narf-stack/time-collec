@@ -1,0 +1,210 @@
+$dark-green:#10B981;
+$fluo-green:#5df478;
+a.back-home{
+  text-decoration: none;
+  font-size: 1.1rem;
+  line-height: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  font-weight: bold;
+  color: $dark-green;
+  display: block;
+  margin: 80px 0px 0px 0px;
+}
+/*SHOP INFO*/
+.shop-profil{
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  margin: 40px 0px
+}
+/*Left side*/
+.info-left-side{
+  border-right: 1px solid rgba(000, 0, 0, .5);
+  height: 100%;
+  width:50%;
+  padding-right: 30px;
+}
+
+
+
+.shop-img {
+  height: 300px;
+  width: 500px;
+  margin-right: 50px;
+  overflow: hidden;
+  img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 0px 0px 10px;
+
+  }
+}
+
+.first-taxon{
+  font-weight: 700;
+  font-size: .875rem;
+  line-height: 1.25rem;
+  text-transform: uppercase;
+  line-height: 100%;
+  letter-spacing: .04em;
+  font-weight: bold;
+  margin: 0;
+  color: $dark-green;
+  display: block;
+  margin: 10px 0px;
+}
+.no-taxon{
+  margin: 10px 0px;
+  display: block;
+}
+
+.shop-name{
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  line-height: 2rem;
+}
+
+.info-left-side p.shop-desc {
+  font-size: 12px;
+  opacity: 0.5;
+  margin: 0;
+  color:black;
+  margin: 10px 0px;
+}
+
+.list-taxon-txt{
+  flex-wrap: wrap;
+}
+.rounded-green-div{
+  background-color: $dark-green;
+  border-radius: 50%;
+  height: 5px;
+  width: 5px;
+  margin: 7px 7px 0px 7px;
+
+}
+.list-txt-taxon{
+  opacity: 0.5;
+  margin: 0;
+  color:black;
+  font-weight: bold;
+  font-size: .875rem;
+  line-height: 1.25rem;
+}
+
+.fa-bicycle:before{
+  color:$dark-green;
+  margin-right: 5px;
+  font-size:18px !important;
+}
+
+.bike{
+  height: 25px;
+  width: 25px;
+  img {
+    height: 25px;
+    width: 100%;
+    object-fit: cover;
+  }
+  span{
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+    color: black;
+  }
+}
+.txt-delivery{
+  opacity: 0.5;
+  font-size: 12px;
+  color:black;
+  font-weight: bold;
+  // padding-left: 20px;
+}
+
+.fa-star:before{
+  color:gold;
+  margin-right: 5px;
+}
+.value {
+  font-size: 14px;
+  color:black;
+  font-weight: bold;
+  margin-right:5px;
+}
+
+.sample-size{
+  font-size: 14px;
+  color:black;
+}
+
+/*Right side*/
+
+.info-right-side{
+  padding-left: 30px;
+
+}
+.fa-map-marker-alt:before{
+  color:$dark-green;
+  margin-right: 5px;
+}
+.shop-address-div{
+  padding-top: 10px;
+  p{
+    opacity: 0.5;
+    font-size: 10px;
+    color:black;
+  }
+}
+.adr-txt{
+  display: block;
+  font-size: 12px;
+  opacity: 0.5;
+  margin: 0;
+  color:black;
+  margin: 10px 0px;
+  margin-left: 17px;
+  flex-wrap: wrap;
+}
+.title{
+  font-weight: bold;
+  display: block;
+  opacity: 0.5;
+  color:black;
+}
+
+.fa-clock:before{
+  color:$dark-green;
+  margin-right: 5px;
+}
+.shop-hours{
+}
+.hour-text{
+  display: block;
+  font-size: 12px;
+  opacity: 0.5;
+  margin: 0;
+  color:black;
+  margin: 10px 0px;
+  margin-left: 23px;
+  flex-wrap: wrap;
+}
+
+.fa-info:before{
+  color:$dark-green;
+  margin-right: 5px;
+}
+.shop-more-info-div{
+  span{
+    display: block;
+    opacity: 0.5;
+    font-size: 12px;
+    font-weight: bold;
+    color: $dark-green;
+  }
+}
+
+.shop-taxons-list{
+  margin-top: 100px;
+}

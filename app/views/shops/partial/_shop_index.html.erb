@@ -1,0 +1,11 @@
+<div class='col-sm-12  col-md-5 col-lg-4 mb-4 mt-4' >
+    <%= link_to shop_path(shop.slug) do %>
+        <div class="card-shop">
+            <% num = rand(20)%>
+            <img class=' fit-img-index' src="https://source.unsplash.com/random/900×700/?store-front/sig=<%= num %>" />
+            <div class="card-shop-infos">
+                <h2><%= shop.name.upcase %></h2>
+            </div>
+        </div>
+    <%end%>
+</div>

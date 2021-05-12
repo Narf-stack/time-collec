@@ -7,7 +7,7 @@ Shop.destroy_all if Rails.env.development?
 
 puts 'Creating shops ...'
 # 1.times do
-  shop = Shop.new(name: Faker::Restaurant.type )
+  shop = Shop.new(name: Faker::Book.title )
   shop.save!
 # end
 puts 'Done shops...'

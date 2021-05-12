@@ -1,7 +1,7 @@
 class Shop < ApplicationRecord
     has_many :business_hours, dependent: :delete_all
     validates :name, presence: true
-    after_validation :set_slug, only: [:create, :update]
+    after_validation :set_slug, only: [:create]
 
     private
 

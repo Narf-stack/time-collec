@@ -1,0 +1,11 @@
+<%= render partial:'shops/partial/pitch' %>
+<%= render partial:'shops/partial/pepite' %>
+<div class="container mt-3">
+  <div class="cards-shops">
+    <div class='row justify-content-around'>
+        <%= render partial:'shops/partial/shop_index', collection: @shops, as: :shop%>
+    </div>
+  </div>
+</div>
+
+

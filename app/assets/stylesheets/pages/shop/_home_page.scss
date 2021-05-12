@@ -1,0 +1,128 @@
+.pitch{
+    margin-bottom: 40px;
+}
+.pitch-titre{
+    margin-bottom:40px;
+}
+
+
+.step{
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    margin: 10px 0px;
+    flex-direction: column;
+    border-radius: 5px;
+    height:260px;
+    width: 250px;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    padding:10px;
+    background-color: rgba(255,255,255,0.5);
+}
+.dot-over{
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.txt-step{
+    flex-wrap: wrap;
+    text-align: center;
+}
+.boldy{
+    font-weight: bold;
+}
+.marker-pitch:before{
+    font-size: 33px;
+}
+.fa-heart:before{
+    color:$dark-green;
+    opacity:.7;
+    margin-right: 5px;
+    font-size: 33px;
+}
+.fa-shopping-bag:before{
+    color:$dark-green;
+    margin-right: 5px;
+    opacity:.7;
+    font-size: 33px;
+}
+.fa-biking:before{
+    color:$dark-green;
+    margin-right: 5px;
+    opacity:.7;
+    font-size: 33px;
+}
+.pepite{
+    background-color: rgba(16,185,129,.1);
+    flex-direction: column;
+    height:300px;
+    width: 100%;
+    align-items: center;
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;  
+}
+.pepit-titre{
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 1;
+    line-height: 3.25rem;
+    color:black
+}
+.pepit-intro{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    color: rgba(113,113,122,var(--tw-text-opacity));
+    width: 90%;
+}
+
+
+  // Single shop
+.card-shop {
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    width:278px;
+    height: 270px;
+    border-radius: 30px;
+}
+  
+.card-shop > img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-shop h2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    color: $dark-green;
+}
+
+.card-shop p {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+    a{
+        text-decoration: none;
+        color:black;
+    }
+}
+
+
+.card-shop .card-shop-infos {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+}
+
+.green-text{
+    color: #5df478 !important;
+}
+
+.fit-img-index{
+    width: 100%;
+    height: 100%; 
+    object-fit: contain;
+}

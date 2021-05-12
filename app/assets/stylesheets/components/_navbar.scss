@@ -1,12 +1,22 @@
-.navbar-lewagon {
-  justify-content: space-between;
-  background: white;
-}
+// .navbar-lewagon {
+//   justify-content: space-between;
+//   background: white;
+// }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
-}
+// .navbar-lewagon .navbar-collapse {
+//   flex-grow: 0;
+// }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+// .navbar-lewagon .navbar-brand img {
+//   width: 40px;
+// }
+
+.navbar-page{
+  background-image:url(image_path('background-top.png'));
+  height:400px;
+  width:100%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size:100% 100%;
+  margin-bottom: 140px;
 }

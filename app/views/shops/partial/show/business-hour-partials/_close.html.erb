@@ -1,0 +1,9 @@
+<% if  Time.now.wday == day %>
+    <span  class="hour-text"><strong><%= I18n.t('closed') %></strong></span>
+<% else %>
+    <span  class="hour-text"><%= I18n.t('closed') %></span>
+<% end %>
+
+<% if false %>
+    <p><#%= I18n.exists?('closed', :en) %></p>
+<% end %>

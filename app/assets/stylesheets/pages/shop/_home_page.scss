@@ -1,6 +1,6 @@
 .top-index-page{
     background-image:url(image_path('background-top.png'));
-    height:400px;
+    height:798px;
     width:100%;
     background-repeat: no-repeat;
     object-fit: cover;
@@ -86,6 +86,7 @@
 
 
   // Single shop
+
 .card-shop {
     overflow: hidden;
     background: white;
@@ -141,13 +142,28 @@
 // Search box
 #src-bx-index{
     position: relative;
-    top: 60%;
+    top: 41%;
     width: 35%;
-    right: -4%;
+    right: -2%;
 }
 
 .index-title{
     margin-bottom: 10px;
     font-weight:bold;
-    font-size: 25px;
+    font-size: 52px;
+    width: 607px;
+}
+.more-mb{
+    margin-bottom: 57px !important;
+}
+
+.fa-search:before {
+    color: #10B981;
+    margin-right: 5px;
+    font-size: 33px;
+}
+.index-btn{
+    background-color: white;
+    border-radius: 5px;
+    margin-left: 10px;
 }

@@ -1,0 +1,7 @@
+<div class='d-flex justify-content-center hour-text'>
+    <% if  Time.now.wday == day %>
+        <strong><%= l business_hour[:open],format: :short %>-<%= l business_hour[:close],format: :short %>,</strong> 
+    <% else %>
+        <%= l business_hour[:open],format: :short %>-<%= l business_hour[:close],format: :short %>, 
+    <% end %>
+</div>

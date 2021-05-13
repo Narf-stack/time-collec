@@ -1,5 +1,4 @@
-$dark-green:#10B981;
-$fluo-green:#5df478;
+
 a.back-home{
   text-decoration: none;
   font-size: 1.1rem;
@@ -9,31 +8,38 @@ a.back-home{
   font-weight: bold;
   color: $dark-green;
   display: block;
-  margin: 80px 0px 0px 0px;
+  margin: 140px 0px 0px 0px;
 }
 /*SHOP INFO*/
+.shop-info{
+  height: 100%;
+  padding: 25px;
+}
 .shop-profil{
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   border-radius: 10px;
-  margin: 40px 0px
+  margin: 40px 0px;
+  height: 370px;
 }
 /*Left side*/
 .info-left-side{
   border-right: 1px solid rgba(000, 0, 0, .5);
   height: 100%;
-  width:50%;
+  // width:50%;
   padding-right: 30px;
+  // margin-left: 10px;
 }
 
 
 
 .shop-img {
-  height: 300px;
-  width: 500px;
-  margin-right: 50px;
+  // height: 300px;
+  // width: 500px;
+  width: 100%;
+  // margin-right: 50px;
   overflow: hidden;
   img {
-    height: 300px;
+    height: 100%;
     width: 100%;
     object-fit: cover;
     border-radius: 10px 0px 0px 10px;
@@ -41,23 +47,6 @@ a.back-home{
   }
 }
 
-.first-taxon{
-  font-weight: 700;
-  font-size: .875rem;
-  line-height: 1.25rem;
-  text-transform: uppercase;
-  line-height: 100%;
-  letter-spacing: .04em;
-  font-weight: bold;
-  margin: 0;
-  color: $dark-green;
-  display: block;
-  margin: 10px 0px;
-}
-.no-taxon{
-  margin: 10px 0px;
-  display: block;
-}
 
 .shop-name{
   font-weight: 700;
@@ -74,25 +63,6 @@ a.back-home{
   margin: 10px 0px;
 }
 
-.list-taxon-txt{
-  flex-wrap: wrap;
-}
-.rounded-green-div{
-  background-color: $dark-green;
-  border-radius: 50%;
-  height: 5px;
-  width: 5px;
-  margin: 7px 7px 0px 7px;
-
-}
-.list-txt-taxon{
-  opacity: 0.5;
-  margin: 0;
-  color:black;
-  font-weight: bold;
-  font-size: .875rem;
-  line-height: 1.25rem;
-}
 
 .fa-bicycle:before{
   color:$dark-green;
@@ -100,32 +70,18 @@ a.back-home{
   font-size:18px !important;
 }
 
-.bike{
-  height: 25px;
-  width: 25px;
-  img {
-    height: 25px;
-    width: 100%;
-    object-fit: cover;
-  }
-  span{
-    font-size: 12px;
-    font-weight: bold;
-    margin: 0;
-    color: black;
-  }
-}
+
 .txt-delivery{
   opacity: 0.5;
   font-size: 12px;
   color:black;
   font-weight: bold;
-  // padding-left: 20px;
 }
 
 .fa-star:before{
   color:gold;
   margin-right: 5px;
+  opacity: 1;
 }
 .value {
   font-size: 14px;
@@ -133,17 +89,22 @@ a.back-home{
   font-weight: bold;
   margin-right:5px;
 }
-
+.opa-5{
+  opacity: 0.5;
+}
 .sample-size{
-  font-size: 14px;
   color:black;
+  opacity: 0.5;
+  font-size: 12px;
 }
 
 /*Right side*/
 
 .info-right-side{
-  padding-left: 30px;
-
+  // padding-left: 10px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 .fa-map-marker-alt:before{
   color:$dark-green;
@@ -179,16 +140,19 @@ a.back-home{
   margin-right: 5px;
 }
 .shop-hours{
+  // height: 100%;
+  // overflow-y: scroll;
+  // overflow-x: hidden;
+  width: 100%;
 }
 .hour-text{
-  display: block;
+  // display: block;
   font-size: 12px;
   opacity: 0.5;
-  margin: 0;
   color:black;
-  margin: 10px 0px;
-  margin-left: 23px;
-  flex-wrap: wrap;
+  // margin: 10px 0px;
+  // margin-left: 23px;
+  // flex-wrap: wrap;
 }
 
 .fa-info:before{
@@ -205,6 +169,15 @@ a.back-home{
   }
 }
 
-.shop-taxons-list{
-  margin-top: 100px;
+
+.div-business-hours{
+  width: 100%;
+  height: 100%;
+  margin-left:20px;
+  // overflow-y: scroll;
+  // overflow-x: hidden;
+}
+
+.h-100{
+  height: 100%;
 }

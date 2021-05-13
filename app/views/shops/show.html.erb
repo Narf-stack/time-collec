@@ -1,0 +1,13 @@
+<div class="container mt-4">
+  <%= link_to "◁ Accueil", root_path, :class=>'back-home' %>
+  <div class="shop-profil d-flex">
+    <div class='row'>
+      <div class='col-sm-12  col-md-12 col-lg-3 h-100' >
+        <%= render partial: "shops/partial/show/shop_id_pics"%>
+      </div>
+      <div class='col-sm-12  col-md-12 col-lg-9 h-100' >
+        <%= render partial: "shops/partial/show/shop_info", locals:{shop: @shop, business_hours:@business_hours, days_ordered:@days_ordered}%>
+      </div>
+    </div>
+  </div>
+</div>

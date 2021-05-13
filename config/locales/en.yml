@@ -31,3 +31,11 @@
 
 en:
   hello: "Hello world"
+  date:
+    day_names: [Sunday,Monday, Tuesday, Wednesday, Thursday, Friday, Saturday]
+  closed: closed
+  time:
+    formats:
+      default: '%I.%m %p'
+      short: '%I:%M %P'
+

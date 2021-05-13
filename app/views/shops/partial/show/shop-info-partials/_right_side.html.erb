@@ -1,0 +1,16 @@
+<div class="info-right-side">
+  <div class='shop-address-div'>
+    <span class="title"><i class="fas fa-map-marker-alt"></i>Adresse</span>
+    <span class="adr-txt">21 st jump street</span>
+  </div>
+  <div class='shop-hours'>
+    <span class="title"><i class="far fa-clock"></i>Horaires</span>
+    <div class='div-business-hours'>
+      <%= render partial:'shops/partial/show/business-hour-partials/bh_collection', collection: days_ordered, as: :day, locals: {business_hours: business_hours}%>
+    </div>  
+  </div>
+</div>
+
+
+
+  

@@ -59,7 +59,7 @@ puts 'Samedi test...'
 # puts "is valid? #{z}"
 
 puts 'Dimanche...'
-h = BusinessHour.new(day:7,opened:false)
+h = BusinessHour.new(day:0,opened:false)
 h.shop = shop
 h.save
 

@@ -1,0 +1,9 @@
+<div class='row'>
+    <div class=' col-md-12 col-lg-3 hour-text justify-content-center'>
+        <%= render partial: display_days_name(day),locals: {day: day} %>
+    </div>
+    <div class=' col-md-12 col-lg-9 d-flex justify-content-center'>
+        <% b_h_per_day = business_hours[day] %>
+        <%= render partial:'shops/partial/show/business-hour-partials/bh_uniq', collection: b_h_per_day, as: :business_hour,locals: {day: day} %>
+    </div>
+</div>

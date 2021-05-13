@@ -1,7 +1,7 @@
 class BusinessHour < ApplicationRecord
   belongs_to :shop
   validates :day, presence: true
-  validates :day, inclusion: { in: 1..7 }
+  validates :day, inclusion: { in: 0..6 }
   validates :open, presence: true, if: :should_validate?
   validates :close, presence: true, if: :should_validate?
   validate :open_hour_before_close_hour?, if: :should_validate?
@@ -9,10 +9,12 @@ class BusinessHour < ApplicationRecord
   validates :close,uniqueness: { scope: [:shop_id, :day], message: "exist already" }, if: :should_validate?
   # validate :range_hour_free?, if: :should_validate?
 
-  # def day_of_week
-  #   Date::DAYNAMES[self.day)]
-  # end
+  def day_of_week
+    Date::DAYNAMES[self.day]
+  end
   
+  
+
 
   private
 

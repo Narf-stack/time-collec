@@ -5,8 +5,10 @@ class Shop < ApplicationRecord
 
 
     def business_hours_aggregate
-      array_bh = business_hours_for_shop(self)
-      hash_business_hours_per_shop_per_day(array_bh)
+      if !self.business_hours.empty?
+        array_bh = business_hours_for_shop(self)
+        hash_business_hours_per_shop_per_day(array_bh)
+      end
     end
     
     def business_hours_for_shop(shop)

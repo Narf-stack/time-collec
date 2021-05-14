@@ -34,12 +34,10 @@ puts 'Vendredi...'
 BusinessHour.create(day:5,open:morning, close:noon, shop: Shop.first)
 BusinessHour.create(day:5,open:afternoon, close:evening, shop: Shop.first)
 
-
 puts 'Samedi...'
-g = BusinessHour.create(day:6,open:morning, close:evening, shop: Shop.first)
+BusinessHour.create(day:6,open:morning, close:evening, shop: Shop.first)
 
 puts 'Samedi test...'
-
 # z = BusinessHour.new( shop:shop, day:6,open:t1, close:t2).valid?
 # puts "is valid? #{z}"
 
@@ -49,7 +47,6 @@ BusinessHour.create(day:0,opened:false, shop: Shop.first)
 puts 'Lundi...'
 BusinessHour.create(day:1,open:morning, close:noon, shop: Shop.first)
 BusinessHour.create(day:1,open:afternoon, close:evening, shop: Shop.first)
-
 
 puts 'Mardi...'
 BusinessHour.create(day:2,open:morning, close:noon, shop: Shop.first)

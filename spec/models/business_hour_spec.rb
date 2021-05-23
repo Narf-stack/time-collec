@@ -44,5 +44,15 @@ RSpec.describe BusinessHour, type: :model do
       expect(business_hour).to be_valid
     end
   end
+
+  context'method tests'do
+    describe '#day_of_week' do
+      it 'returns  the name of the day for the business hour' do
+        shop = create(:shop)
+        business_hour = create(:business_hour)
+        expect(business_hour.day_of_week).to eql('Wednesday')
+      end
+    end
+  end
 end
 

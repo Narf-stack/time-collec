@@ -1,5 +1,7 @@
 class Shop < ApplicationRecord
     has_many :business_hours, dependent: :delete_all
+    has_many :emergencies,class_name:'Emergency'
+    has_many :friends,class_name:'Friend'
     validates :name, presence: true
     after_validation :set_slug, only: [:create]
 

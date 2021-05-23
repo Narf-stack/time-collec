@@ -69,6 +69,9 @@ RSpec.describe Shop, type: :model do
         # p shop_wth_busi_hours.business_hours
         # puts Shop.reflect_on_association(:business_hours).macro
         # expect(shop.business_hours_aggregate).to eql(hash_val)
+        # p shop_wth_busi_hours.business_hours_aggregate
+        # {3=>[{:id=>18, :day=>3, :open=>Sat, 01 Jan 2000 15:21:22 UTC +00:00, :close=>Sat, 01 Jan 2000 22:21:22 UTC +00:00, :opened=>true, :shop_id=>20, :created_at=>Sun, 23 May 2021 13:21:22 UTC +00:00, :updated_at=>Sun, 23 May 2021 13:21:22 UTC +00:00}, 
+        # {:id=>19, :day=>3, :open=>Sat, 01 Jan 2000 15:21:22 UTC +00:00, :close=>Sat, 01 Jan 2000 22:21:22 UTC +00:00, :opened=>true, :shop_id=>20, :created_at=>Sun, 23 May 2021 13:21:22 UTC +00:00, :updated_at=>Sun, 23 May 2021 13:21:22 UTC +00:00}]}
         expect(shop_wth_busi_hours.business_hours.length).to eql(2)
       end
     end

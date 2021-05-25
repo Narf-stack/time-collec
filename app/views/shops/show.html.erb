@@ -11,10 +11,23 @@
     </div>
   </div>
 
-  <p id='new-friend'>New Friend</p>
-  <div id='div-new-friend' data-slug='<%= @shop.slug  %>'></div>
+  <div id='friend-group'>
+    <div id='div-make-friend'>
+      <p id='new-friend-btn'>New Friend</p>
+      <div id='div-new-friend' data-slug='<%= @shop.slug  %>'></div>
+    </div>
+    <div id='div-all-friends'>
+      <%= render partial:'shops/partial/show/contact_uniq', collection: @friends, as: :contact, locals: {type: 'friend'}%>
+    </div>
+  </div>
 
-  <p id='new-emergency'>New Emergency</p>
-  <div id='div-new-emergency' data-slug='<%= @shop.slug  %>'></div>
-  
+  <div id='emergency-group'>
+    <div id='div-make-emergency'>
+      <p id='new-emergency-btn'>New Emergency</p>
+      <div id='div-new-emergency' data-slug='<%= @shop.slug  %>'></div>
+    </div>
+    <div id='div-all-emergency'>
+      <%= render partial:'shops/partial/show/contact_uniq', collection: @emergencies, as: :contact, locals: {type: 'emergency'}%>
+    </div>
+  </div>
 </div>

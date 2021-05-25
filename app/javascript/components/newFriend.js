@@ -2,7 +2,7 @@ const newFriend =()=> {
     const newFriendElem = document.getElementById('div-new-friend')
     
     if (newFriendElem){
-        const newBtn = document.getElementById('new-friend')
+        const newBtn = document.getElementById('new-friend-btn')
 
         newBtn.addEventListener("click", (e) => {
 

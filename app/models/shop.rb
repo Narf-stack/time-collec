@@ -6,6 +6,7 @@ class Shop < ApplicationRecord
     after_validation :set_slug, only: [:create]
 
 
+
     def business_hours_aggregate
       if !self.business_hours.empty?
         array_bh = business_hours_for_shop(self)

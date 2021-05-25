@@ -7,6 +7,7 @@ class ShopsController < ApplicationController
         @business_hours = @shop.business_hours_aggregate
         @days_ordered = @shop.array_ordered_days
         @friends = @shop.friends
+        @emergencies = @shop.emergencies
     end
 
     def new_contact

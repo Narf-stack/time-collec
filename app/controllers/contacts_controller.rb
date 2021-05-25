@@ -6,6 +6,22 @@ class ContactsController < ApplicationController
 
     def create
         @contact = @shop.send(set_type.pluralize).new(contact_params)
+        if @contact.save
+            if set_type == 'friends'
+                # @contacts = @shop.friends
+                @type ='friends'
+                path = 'add_friend'
+            else 
+                # @contacts = @shop.emergencies
+                @type ='emergencies'
+                path = 'add_emergency'
+            end
+            respond_to do |format|
+                format.js { render path}
+            end
+        else
+            render :new
+        end
     end
 
     def edit

@@ -28,10 +28,15 @@ import "bootstrap";
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 import { showHideSearchBox } from '../components/searchBox';
+import { newFriend } from '../components/newFriend';
+import { newEmergency } from '../components/newEmergency';
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
 
   showHideSearchBox();
+
+  newFriend();
+  newEmergency();
 });

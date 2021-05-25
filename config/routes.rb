@@ -6,5 +6,6 @@ Rails.application.routes.draw do
     resources :friends, controller: :contacts, type:'Friend'
   end
   resources :shops, only: :index
+  post "new_contact", to: "shops#new_contact", as: "new_contact"
 
 end

@@ -29,13 +29,12 @@ class Shop < ApplicationRecord
       [0,1, 2, 3, 4, 5, 6].rotate(Date.today.wday) 
     end
 
+    def to_param
+      slug
+    end
     private
 
     def set_slug
       self.slug = (name.to_s + '-'+ rand(1...20).to_s).parameterize
-    end
-  
-    def to_param
-      slug
     end
 end
